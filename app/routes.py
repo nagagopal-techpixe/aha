@@ -45,10 +45,10 @@ async def generate_review(payload: dict):
             }
         })
 
-        if today_count >= 2:
+        if today_count >= 5:
             raise HTTPException(
                 status_code=429,
-                detail="Daily limit reached. Only 2 reviews allowed per day."
+                detail="Daily limit reached. Only 5 reviews allowed per day."
             )
 
         # -----------------------------
