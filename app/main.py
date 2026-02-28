@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from app.routes import router as review_router
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="Movie Review API")
+app = FastAPI(title="Movie Review API");
 
 app.add_middleware(
     CORSMiddleware,
